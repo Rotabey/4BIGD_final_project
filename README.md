@@ -1,1 +1,5 @@
-# 4BIGD_final_project
+# Startup
+_Be sure Docker is running before completing the following steps_
+```bash
+docker compose up -d --build
+```
