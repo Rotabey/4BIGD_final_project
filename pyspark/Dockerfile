@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y default-jdk
 
 RUN poetry install
 
-COPY main.py README.MD dataset_downloader.py hdfs_manager.py pipeline.py /home/.
+COPY main.py README.MD dataset_downloader.py pipeline.py /home/.
 COPY mongo-spark-connector_2.13-10.3.0.jar /home/mongo-spark-connector_2.13-10.3.0.jar
 
 ENTRYPOINT ["poetry", "run", "python3", "main.py"]

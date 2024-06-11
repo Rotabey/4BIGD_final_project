@@ -3,7 +3,6 @@ import gzip
 import shutil
 from hdfs import InsecureClient
 
-
 class IMDBDatasetDownloader:
     def __init__(self, imdb_url, imdb_gz_file_name, imdb_tsv_file_name, hdfs_url, hdfs_user, hdfs_base_dir):
         self.imdb_url = imdb_url
